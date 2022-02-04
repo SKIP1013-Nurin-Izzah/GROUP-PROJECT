@@ -1,0 +1,83 @@
+===========================WELCOME TO MINI ACCOUNTANT CALCULATOR===========================
+This system is to help student to know how much money they had expense in a month
+Please fill in the blank for the requirement
+
+****************************************Section A******************************************
+Please enter your name = 
+Ainur Hanim
+Please enter your age = 
+20
+Please enter your matric number = 
+288091
+What is your current year studies = 
+2022
+Please enter your qualification level 
+(Input 1 for Diploma, 2 for FoundationDegree , 3 for BachelorsDegree, 4 for MasterDegree, 5 for PHD) = 
+3
+Bachelors Degree
+Do you confirm with your information details? 
+Please enter '1' for yes, '2' for no
+1
+Student's Name : Ainur Hanim
+Age : 20
+Matric number : 288091
+Current year studies : 2022
+*******************************************************************************************
+
+
+****************************************Section B******************************************
+Please enter your allowance = RM
+3500
+Please enter your university fees = RM
+500
+Please enter your total meals expense in a day = RM
+20
+You had reach the limit
+===========================LAUNDRY CENTER PRICE LIST=========================================
+    Type Of Machine                 CODE                            PRICE                    
+      Washing Machine                01                               2.50                   
+      Dryer Machine                  02                               2.50                   
+      Both Machine                   03                               5.00                   
+Please enter what type of machine you want to use :  
+01
+You are using Washing Machine only in a week
+The total laundry expense in week = RM 2.50
+=======================DATA PLAN FOR THE TELEPHONE BILLS====================================
+           DAYS                     CODE                            PRICE                   
+            30                       00                               30                    
+             7                       55                               12                    
+             1                       22                                3                    
+Please choose your type of data plan in a month  = 
+00
+The total expense for telephone bills in a month = RM30
+============================The price list of books and stationaries========================
+                 ITEM                                     CODE                  PRICE        
+                 Book                        =              1                   RM2.50       
+               Test pad                      =              2                   RM3.00       
+                 Pen                         =              3                   RM0.80       
+            Correction Tape                  =              4                   RM4.00       
+Please enter your item by input the code  = 
+1
+Enter the quantity of the books : 
+3
+The total price for item  : RM 7.50
+*******************************************************************************************
+
+****************************************Section C******************************************
+Your total amount in your account for each month is RM 583.33
+Please enter your total money added = RM
+1000
+Your total amount in your account after adding your money added = RM 1583.33
+All the total expenses for you in a month is RM 1147.50
+======================================================================================
+======================================================================================
+Your total balance in your account after you finish settling all the expenses is RM 435.83
+Your total amount for saving in this month is RM 130.75
+***************************************************************************************
+Enter the number of students used this system in each 4 weeks :
+5
+10
+15
+20
+The total number of student who had used this system in a month : 50 students
+======================================================================================
