@@ -1,0 +1,41 @@
+------------------------Welcome to the MEDICAL UUM------------------------
+-------------------------WE SHARE WE CARE WE LOVE-------------------------
+Patient 1
+Name : LILI BINTI AHMAD
+Age : 12
+Gender : FEMALE
+Personal e-mail : liliana@yahoo.com
+Phone number : 01922387676
+Please take note on the hours charges and the selection of the services provided
+===============================================================
+SERVICES          | PER APPOINTMENT (RM)   |  SELECTION NEEDED |
+---------------------------------------------------------------
+= DIET SERVICES   |          70            |         1         |                                                             
+= CHECK UP        |           5            |         2         |                                                          
+= DIET + CHECK UP |          75            |         3         |                                                        
+= PANADOL         |          10            |         -         |                                                        
+= ANTIBIOTICS     |          8             |         -         |                                                        
+===============================================================
+Please select which treatment is needed = 
+2
+--------------------------------------------------------------------------------------------------------------------------------------------
+Details that must be filled by the doctors below
+Blood Type : A
+Condition of heart rate : NORMAL
+X-ray details : NORMAL
+Temperature : 40
+Insert the INTAKE medication needed by the patients below
+Packs of panadol : 2
+Packs needed of antibiotics : 2
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Do you have UUMONETOUCH APPLICATION for the payment?Please enter 1 for yes and 2 for no : 2
+The payment will deducted on your card/cash 
+Enter how much money to pay : 
+80
+Your total for medical check-up for today : RM 41.00 
+
+Balance of your payment : RM 39.00 
