@@ -1,0 +1,56 @@
+------------------------Welcome to the MEDICAL UUM------------------------
+-------------------------WE SHARE WE CARE WE LOVE-------------------------
+Patient 1
+Name : Haekyum lee
+Age : 22
+Gender : MALE
+Personal e-mail : boom@gmail.com
+Phone number : 01163129090
+Please take note on the hours charges and the selection of the services provided
+===============================================================
+SERVICES          | PER APPOINTMENT (RM)   |  SELECTION NEEDED |
+---------------------------------------------------------------
+= DIET SERVICES   |          70            |         1         |                                                             
+= CHECK UP        |           5            |         2         |                                                          
+= DIET + CHECK UP |          75            |         3         |                                                        
+= PANADOL         |          10            |         -         |                                                        
+= ANTIBIOTICS     |          8             |         -         |                                                        
+===============================================================
+Please select which treatment is needed = 
+1
+--------------------------------------------------------------------------------------------------------------------------------------------
+These are the charts of the body mass index you have
+If your BMI is less than 18.5 : UNDERWEIGHT 
+If your BMI is more than equal 18.5 and less than 24.9 : NORMAL 
+If your BMI is less than 30  : OVERWEIGHT 
+If your BMI is more than 30 : OBESE 
+
+Enter weight in Kilogram: 99
+Enter your height in Meter: 1.55
+The BMI for this patient is : 41.21 
+--------------------------------------------------------------------------------------------------------------------------------------------
+                           This is the table for a day routine food intake        
+==================================================================================================================
+= BREAKFAST ------> 3 egg whites + 1 toasted brown bread + 1/2 cup low fat milk (no sugar)                                                                                                   
+= TUESDAY   ------> 1 cup papaya                                                                                               
+= WEDNESDAY ------> 1 cup arhar dal + 1 chapatti + 1/2 cup low fat curd + salad                                                                                               
+= THURSDAY  ------> 1 cup vegetable soup                                                                                               
+= FRIDAY    ------> 1 cup pumpkin + 1 chapatti + salad                                                                                                
+==================================================================================================================
+As for starters, it is advisable to plan a four times a week exercising as a daily boost up
+Enter the hours needed a day for the patients to participate in
+1
+2
+1
+1
+Keep it focus and maintain of the average hour as in 2hour
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Do you have UUMONETOUCH APPLICATION for the payment?Please enter 1 for yes and 2 for no : 1
+You will get a 50% off with UUMONETOUCH :) 
+Please enter your UUMONETOUCH balance : 
+100
+Your total for medical check-up for today : RM 35.00 
+
+Balance of your payment : RM 65.00
