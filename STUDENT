@@ -1,0 +1,373 @@
+import java.util.Scanner;
+public class Student {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner scan = new Scanner (System.in);
+		
+		String Diploma = "1";
+		String FoundationDegree = "2";
+		String BachelorsDegree = "3";
+		String MasterDegree = "4";
+		String PHD = "5";
+		double MachineType = 0;
+		double quantity = 0;
+		double item = 0;
+ 		double itemPrice = 0; 
+		double totalamount = 0;
+		double laundryExpense = 0;
+		double totalAccount = 0; //new
+		double totalNeeded = 0;
+		double totalbalance = 0;
+		double totaladded = 0;
+		double totalsaving = 0;
+		double totalNewAdded=0;
+		double totalNewNeeded = 0; 
+		
+		
+		studentBackground();
+		System.out.println("****************************************Section B******************************************");
+		double allowance = 0;
+		System.out.println("Please enter your allowance = RM");
+	    allowance=scan.nextDouble();
+		double fees = 500;
+		studentExpenses1(fees);
+		studentMeals(itemPrice);
+		System.out.println("===========================LAUNDRY CENTER PRICE LIST=========================================");
+		System.out.println("    Type Of Machine                 CODE                            PRICE                    ");
+		System.out.println("      Washing Machine                01                               2.50                   ");
+		System.out.println("      Dryer Machine                  02                               2.50                   ");
+		System.out.println("      Both Machine                   03                               5.00                   ");
+		double WashMashine=2.50;
+		double DryMachine =2.50;
+		studentLaundry(MachineType, WashMashine, DryMachine);
+		System.out.println("=======================DATA PLAN FOR THE TELEPHONE BILLS====================================");
+		System.out.println("           DAYS                     CODE                            PRICE                   ");
+		System.out.println("            30                       00                               30                    ");
+		System.out.println("             7                       55                               12                    ");
+		System.out.println("             1                       22                                3                    ");
+		int day30Price = 30;
+		int day7Price = 12;
+		int day1Price = 3;
+		int phoneBills = 30;
+		studentData(phoneBills, day30Price, day7Price, day1Price);
+		System.out.println("============================The price list of books and stationaries========================");
+		System.out.println("                 ITEM                                     CODE                  PRICE        ");
+		System.out.println("                 Book                        =              1                   RM2.50       ");
+	    System.out.println("               Test pad                      =              2                   RM3.00       ");
+	    System.out.println("                 Pen                         =              3                   RM0.80       ");
+	    System.out.println("            Correction Tape                  =              4                   RM4.00       ");
+		double book = 2.50;
+		double testpad = 3.00;
+		double pen = 0.80;
+		double correctiontape=4.00; 
+	    studentBooks(book, testpad, pen, correctiontape, quantity, item);
+		System.out.println("*******************************************************************************************");
+		System.out.println("");
+		System.out.println("****************************************Section C******************************************");	
+		System.out.printf("Your total amount in your account for each month is RM %.2f" , studentAccount(allowance));
+		System.out.println("");
+		double totalAccount2 = 0;
+		studentAdded(totaladded, totalAccount2, totalamount);
+		double fees1 = 500;
+		double mealsExpense = 20;
+		double laundryExpense1 = 2.50;
+		double itemPrice1 = 7.50;
+		double DataPrice = 30.00;
+		double totalAll = 0;
+		studentTotalExpense(fees1, mealsExpense, laundryExpense1, DataPrice, itemPrice1, totalAll);
+		System.out.println("======================================================================================");
+		studentFinish(totalAccount2, totalbalance, totalAll);
+		studentSaving(totalbalance, totalsaving);
+		studentSystem(args);
+		int[] student = {5, 10, 15, 20};
+		System.out.println("======================================================================================");
+		
+
+		
+	
+	}
+		
+	
+
+		public static void studentBackground() {
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("===========================WELCOME TO MINI ACCOUNTANT CALCULATOR===========================");
+		System.out.println("This system is to help student to know how much money they had expense in a month");
+		System.out.println("Please fill in the blank for the requirement");
+		System.out.println("");
+		
+		System.out.println("****************************************Section A******************************************");
+		System.out.println("Please enter your name = ");
+		String name=scan.nextLine();
+		System.out.println("Please enter your age = ");
+		String age=scan.next();
+		System.out.println("Please enter your matric number = ");
+		String matricNum=scan.next();
+		System.out.println("What is your current year studies = ");
+		String year=scan.next();
+		String[]qualificationlevels = {"Diploma", "Foundation Degree", "Bachelors Degree", "Master Degree", "PHD"};
+		System.out.println("Please enter your qualification level " + "\n" + "(Input 1 for Diploma, 2 for FoundationDegree , 3 for BachelorsDegree, 4 for MasterDegree, 5 for PHD) = ");
+		int qualificationlevel=scan.nextInt();
+		if(qualificationlevel==1)
+		{
+			System.out.println(qualificationlevels[0]);
+		}
+		else if(qualificationlevel==2)
+		{
+			System.out.println(qualificationlevels[1]);
+		}
+		else if(qualificationlevel==3)
+		{
+			System.out.println(qualificationlevels[2]);
+		}
+		else if(qualificationlevel==4)
+		{
+			System.out.println(qualificationlevels[3]);
+		}
+		else 
+		{
+			System.out.println(qualificationlevels[4]);
+		}
+		
+		    System.out.println("Do you confirm with your information details? ");
+		    System.out.println("Please enter '1' for yes, '2' for no");
+		    int confirm = scan.nextInt();
+		String sB [][] = {{"Student's Name", "Age", "Matric number", "Current year studies"}, //[0][1][2][3]
+				          { name, age, matricNum, year}}; //[0][1][2][3]
+		studentBackground(sB);
+		System.out.println();
+		}
+		
+		
+	    public static void studentBackground(String[][]sBg) {
+	    	
+	    	System.out.println(sBg[0][0] + " : " + sBg[1][0]);
+	    	System.out.println(sBg[0][1] + " : " + sBg[1][1]);
+	    	System.out.println(sBg[0][2] + " : " + sBg[1][2]);
+	    	System.out.println(sBg[0][3] + " : " + sBg[1][3]);
+	  
+		System.out.println("*******************************************************************************************");
+		System.out.println("");
+	    }
+	    	
+
+		public static double studentExpenses1(double fees)
+		{
+			Scanner scan = new Scanner(System.in);
+			
+		    System.out.println("Please enter your university fees = RM");
+		    fees=scan.nextDouble();
+		    return fees;
+		}
+		
+		public static double studentMeals(double mealsExpense)
+		{
+			Scanner scan = new Scanner(System.in);
+		    System.out.println("Please enter your total meals expense in a day = RM");
+		    mealsExpense=scan.nextDouble();
+		    
+		{
+		int i = 0;
+		if(mealsExpense==20)
+			System.out.println("You had reach the limit");
+		else
+		{
+			do
+			{
+				if(mealsExpense<=20)
+				{
+					System.out.println("Please enter another meals expense : RM");
+					mealsExpense=scan.nextDouble();
+				}
+				i++;
+			
+		}
+			while(i<2);
+					System.out.println("You had over the limit");
+					}}
+		return mealsExpense;
+		} 
+		
+		public static double studentLaundry(double MachineType, double WashMachine1, double DryMachine1)
+		{
+			Scanner scan = new Scanner(System.in);
+			
+				System.out.println("Please enter what type of machine you want to use :  ");
+		        MachineType=scan.nextInt(); 
+				double WashMachine = 2.50;
+				double DryMachine = 2.50;
+		    if(MachineType==1)
+		{
+			double laundryExpense= WashMachine;
+			System.out.println("You are using Washing Machine only in a week");
+			System.out.printf("The total laundry expense in week = RM %.2f" , laundryExpense);
+			System.out.println("");
+			
+		}
+		if(MachineType==3)
+		{
+			double laundryExpense=WashMachine + DryMachine;
+			System.out.println("You are using Washing Machine and Dryer Machine in a week");
+			System.out.printf("The total laundry expense in week = RM %.2f" , laundryExpense);
+			System.out.println("");
+		}
+		else if(MachineType==2)
+		{
+			double laundryExpense = DryMachine;
+			System.out.println("You are using Dryer Machine only in a week");
+			System.out.printf("The total laundry expense in week = RM %.2f" , laundryExpense);
+			System.out.println("");
+			{}}
+		double laundryExpense = 0;
+		return laundryExpense;
+		
+		}
+		
+		public static int studentData (int phoneBills, int day30Price, int day7Price, int day1Price)
+		{
+			Scanner scan = new Scanner(System.in);
+			
+			System.out.println("Please choose your type of data plan in a month  = ");
+			phoneBills=scan.nextInt();
+			if(phoneBills==00)
+			{
+				int DataPrice = day30Price;
+				System.out.println("The total expense for telephone bills in a month = RM" + DataPrice);
+			}
+			else if(phoneBills==55)
+			{
+				int DataPrice = day7Price*4;//4 weeks 
+				System.out.println("The total expense for telephone bills in a month = RM" + DataPrice);
+			}
+			else
+			{
+				int DataPrice = day1Price*30; //30days
+				System.out.println("The total expense for telephone bills in a month = RM" + DataPrice);
+			}
+			int DataPrice = 0;
+			return DataPrice;
+		}	
+		
+
+		public static double studentBooks(double book, double testpad, double pen, double correctiontape, double quantity, double item)
+		{
+			Scanner scan = new Scanner(System.in);
+			System.out.println("Please enter your item by input the code  = ");
+			double item1=scan.nextInt();
+			if(item1==1)
+			{
+				System.out.println("Enter the quantity of the books : ");
+				double quantity1=scan.nextInt();
+				double itemPrice=quantity1*book;
+				System.out.printf("The total price for item  : RM %.2f" ,itemPrice);
+				System.out.println("");
+			
+			}
+			else if(item1==2)
+			{
+				System.out.println("Enter the quantity of the test pad : ");
+				double quantity1=scan.nextInt();
+				double itemPrice=quantity1*testpad;
+				System.out.printf("The total price for item  : RM %.2f" ,itemPrice);
+				System.out.println("");
+			}
+			else if(item1==3)
+			{
+				System.out.println("Enter the quantity of the pen : ");
+				double quantity1=scan.nextInt();
+				double itemPrice=quantity1*pen;
+				System.out.printf("The total price for item  : RM %.2f	" ,itemPrice);
+				System.out.println("");
+			}
+			else
+			{
+				System.out.println("Enter the quantity of the correction tape : ");
+				double quantity1=scan.nextInt();
+				double itemPrice=quantity1*correctiontape;
+				System.out.printf("The total price for item  : RM %.2f" ,itemPrice);
+				System.out.println("");
+			}
+			double itemPrice = 0;
+			return itemPrice;
+			
+
+		}
+		
+		
+			public static double studentAccount(double allowance) {
+
+			Scanner scan = new Scanner(System.in);
+			double totalAmount;
+			return totalAmount = allowance/6;
+			}
+
+
+
+			public static double studentAdded(double totaladd, double totalAccount, double totalamount1)
+			{
+				Scanner scan = new Scanner(System.in);
+			System.out.println("Please enter your total money added = RM");
+			double totaladded=scan.nextDouble();
+			double totalAccount1 = 0;
+			double totalamount = 583.33;
+			double totalAccount2=totalamount+totaladded;
+			System.out.printf("Your total amount in your account after adding your money added = RM %.2f" , totalAccount2);
+			System.out.println("");
+			return totalAccount2;
+			}
+			public static double studentTotalExpense (double fee, double ME, double LE, double DP, double IP, double TA) {
+				Scanner scan = new Scanner(System.in);
+			double fees = 500;
+			double mealsExpense = 20;
+			double laundryExpense = 2.50;
+			double itemPrice = 7.50;
+			double DataPrice = 30.00;
+			double totalAll=(fees+(mealsExpense*30)+(laundryExpense*4)+DataPrice+itemPrice);
+			System.out.printf("All the total expenses for you in a month is RM %.2f" , totalAll);
+			System.out.println("");
+			return totalAll;
+			}
+			public static double studentFinish(double toAcc2, double toBal, double toAll)
+			{
+				Scanner scan = new Scanner(System.in);
+			System.out.println("======================================================================================");
+			double totalAccount2 = 1583.33;
+			double totalAll = 1147.50;
+			double totalbalance1=totalAccount2-totalAll;
+			System.out.printf("Your total balance in your account after you finish settling all the expenses is RM %.2f" , totalbalance1);
+			System.out.println("");
+			return totalbalance1; 
+			 }
+			
+			public static double studentSaving(double toBal, double toSave)
+			{
+				Scanner scan = new Scanner(System.in);
+				double totalbalance1 = 435.83;
+				double totalsaving=(30*totalbalance1)/100;
+				System.out.printf("Your total amount for saving in this month is RM %.2f" , totalsaving);
+				System.out.println("");
+				System.out.println("***************************************************************************************");
+				return totalsaving;
+			}
+			
+			public static void studentSystem (String [] args)
+			{
+				Scanner scan = new Scanner(System.in);
+				int sum = 0;
+				int[] student = new int[2];
+				System.out.println("Enter the number of students used this system in each 4 weeks :");
+					for(int i = 0; i<student.length; i++) 
+						for (int x = 0; x<student.length; x++) {
+						student[i] = scan.nextInt();
+						
+						sum = sum + student[i];
+						}
+					System.out.println("The total number of student who had used this system in a month : " + sum + " students");
+					
+
+
+	}
+
+}
