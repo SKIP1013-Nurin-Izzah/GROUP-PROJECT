@@ -1,0 +1,56 @@
+import java.util.Scanner;
+public class UniversityProject {
+
+	public static void main(String[] args) {
+		char choices;
+		Scanner input = new Scanner (System.in);
+		do {
+		System.out.println("===================================WELCOME TO UUM SERVICE==============================");
+		System.out.println("===================================HOW CAN WE ASSIST YOU?==============================");
+		System.out.println();
+		System.out.println("===========================================");
+		System.out.println("=   SERVICES      | 	SELECTION         |");
+		System.out.println("-------------------------------------------");
+		System.out.println("= EMPLOYEE        |          1            |");
+		System.out.println("= STUDENT         |          2            |");
+		System.out.println("= COURSE          |          3            |");
+		System.out.println("= LIBRARY         |          4            |");
+		System.out.println("= MEDICAL         |          5            |");
+		System.out.println("===========================================");
+		
+		System.out.println("Please choose your service based on the table above : ");
+		int opt = input.nextInt();
+		System.out.println();
+		Medical.displayWel();
+		if (opt == 1) {
+			Employee emp = new Employee();
+			emp.main(args);
+		}
+		else if (opt == 2) {
+			Student stud = new Student();
+			stud.main(args);
+		}
+		else if (opt == 3) {
+			Course cour = new Course();
+			cour.main(args);
+		}
+		else if (opt == 4) {
+			Library lib = new Library();
+			lib.main(args);
+		}
+		else if (opt == 5) {
+			Medical med = new Medical();
+			med.main(args);
+		}
+		else {
+			System.out.println("No service under this option! Please refer to the table above.");
+		}
+		
+		System.out.println();
+		System.out.println("WOULD YOU LIKE TO RETURN TO THE MAIN MENU? [Y/N]");
+		choices = input.next().charAt(0);	
+		System.out.println();
+	}
+		while (choices == 'Y' || choices == 'y');
+	}
+}
