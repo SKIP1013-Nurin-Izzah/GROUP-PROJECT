@@ -1,0 +1,361 @@
+import java.util.Scanner;
+
+public class Medical {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+    Scanner input = new Scanner(System.in);
+    displayWel();
+	personalInformation();
+	medicalDetails(); 
+	medicalCharges();
+	}
+	public static void displayWel() {
+		System.out.println("WELOME TO UUM! LET'S PROCEED TO YOUR SELECTION CHOSEN");
+	}
+		public static void personalInformation () {
+		Scanner input = new Scanner(System.in);	
+			System.out.println("------------------------Welcome to the MEDICAL UUM------------------------");
+			System.out.println("-------------------------WE SHARE WE CARE WE LOVE-------------------------");
+			System.out.println("Patient 1");
+			System.out.print("Name : ");
+			String name = input.nextLine();
+			System.out.print("Age : ");
+			int age = input.nextInt();
+			System.out.print("Gender : ");
+			String gender = input.next();
+			System.out.print("Personal e-mail : ");
+			String email = input.next();
+			System.out.print("Phone number : ");
+			int phone = input.nextInt();
+		}
+		public static void medicalDetails () {
+			Scanner input = new Scanner(System.in);	
+			System.out.println("Please take note on the hours charges and the selection of the services provided");
+			System.out.println("===============================================================");
+			System.out.println("SERVICES          | PER APPOINTMENT (RM)   |  SELECTION NEEDED |");
+			System.out.println("---------------------------------------------------------------");
+			System.out.println("= DIET SERVICES   |          70            |         1         |                                                             ");
+			System.out.println("= CHECK UP        |           5            |         2         |                                                          ");
+			System.out.println("= DIET + CHECK UP |          75            |         3         |                                                        ");
+			System.out.println("= PANADOL         |          10            |         -         |                                                        ");
+			System.out.println("= ANTIBIOTICS     |          8             |         -         |                                                        ");
+			System.out.println("==============================================================="); 
+		}
+		public static void medicalCharges() {
+			Scanner med = new Scanner(System.in);
+			System.out.println("Please select which treatment is needed = ");
+			int selection = med.nextInt();
+			int[] price = {70,5,75,10,8};
+			double total=0;
+			double total1;
+			double totalpayment;
+			int app;
+			double panadol = 10;
+			double antibiotics = 8;
+			double fever;
+	
+		if (selection == 1) {        
+				System.out.println("--------------------------------------------------------------------------------------------------------------------------------------------");
+				System.out.println("These are the charts of the body mass index you have");
+		        System.out.println("If your BMI is less than 18.5 : UNDERWEIGHT ");
+		        System.out.println("If your BMI is more than equal 18.5 and less than 24.9 : NORMAL ");
+		        System.out.println("If your BMI is less than 30  : OVERWEIGHT ");
+		        System.out.println("If your BMI is more than 30 : OBESE ");
+		        System.out.println("");
+				System.out.print("Enter weight in Kilogram: ");
+				double weight = med.nextDouble();
+				System.out.print("Enter your height in Meter: ");
+				double height = med.nextDouble();
+				double bmi = weight/(height*height);
+				System.out.printf("The BMI for this patient is : %.2f ",bmi);
+				System.out.print("\n");
+				
+		        
+		        System.out.println("--------------------------------------------------------------------------------------------------------------------------------------------");
+		        if (bmi > 30) {
+		        
+					System.out.println("                           This is the table for a day routine food intake        ");
+					System.out.println("==================================================================================================================");
+					System.out.println("= BREAKFAST ------> 3 egg whites + 1 toasted brown bread + 1/2 cup low fat milk (no sugar)                                                                                                   ");
+					System.out.println("= TUESDAY   ------> 1 cup papaya                                                                                               ");
+					System.out.println("= WEDNESDAY ------> 1 cup arhar dal + 1 chapatti + 1/2 cup low fat curd + salad                                                                                               ");
+					System.out.println("= THURSDAY  ------> 1 cup vegetable soup                                                                                               ");
+					System.out.println("= FRIDAY    ------> 1 cup pumpkin + 1 chapatti + salad                                                                                                ");
+					System.out.println("==================================================================================================================");
+					
+					System.out.println("As for starters, it is advisable to plan a four times a week exercising as a daily boost up");
+					
+					int sum=0;
+					int [] sales = new int[2];
+					
+					Scanner input = new Scanner(System.in);
+					
+					System.out.println("Enter the hours needed a day for the patients to participate in");
+					
+					for (int i=0; i<sales.length; i++)
+						for (int y=0; y<sales.length; y++) {
+							sales [i]=input.nextInt();
+							
+							sum = sum + sales[i];
+						}
+					int avg = sum/sales.length;
+					System.out.println("Keep it focus and maintain of the average hour as in "+avg+"hour");
+				}
+						
+				else
+				{
+					int sum=0;
+					int [] sales = new int[2];
+					
+					Scanner input = new Scanner(System.in);
+					
+					System.out.println("Enter the kcall intake for a month in each line as in weeks (4 weeks) : ");
+					
+					for (int i=0; i<sales.length; i++)
+						for (int y=0; y<sales.length; y++) {
+							sales [i]=input.nextInt();
+							
+							sum = sum + sales[i];
+						}
+					int avg = sum/sales.length;
+					System.out.println("The sum of kcall "+sum);
+					System.out.println("The average of kcall is "+avg);
+						
+		         }
+					
+		        System.out.println("--------------------------------------------------------------------------------------------------------------------------------------------");
+
+				System.out.println("\n");   
+		        System.out.print("Do you have UUMONETOUCH APPLICATION for the payment?");
+				System.out.print("Please enter 1 for yes and 2 for no : ");
+				app = med.nextInt();
+				
+				totalpayment = (price[0]);
+			
+				if (app == 1) {
+					System.out.println("You will get a 50% off with UUMONETOUCH :) ");
+					System.out.println("Please enter your UUMONETOUCH balance : ");
+					double uumtouch = med.nextDouble();
+					double balance = uumtouch - (totalpayment/2);
+					System.out.printf("Your total for medical check-up for today : RM %.2f ",totalpayment/2);
+					System.out.println("\n");
+					System.out.printf("Balance of your payment : RM %.2f " ,balance);
+					System.out.println("\n");
+					
+				}
+				else if (app == 2) {
+					System.out.println("The payment will deducted on your card/cash ");
+					System.out.println("Enter how much money to pay : ");
+					double cash = med.nextDouble();
+					double balance = cash - totalpayment;
+					System.out.printf("Your total for medical check-up for today : RM %.2f ",totalpayment);
+					System.out.println("\n");
+					System.out.printf("Balance of your payment : RM %.2f " ,balance);
+					System.out.println("\n");
+				}
+				else
+				{
+					System.out.println("System unable to proceed with the payment. Please retry again");
+				}
+		}
+		else if (selection==2) { 
+			
+				System.out.println("--------------------------------------------------------------------------------------------------------------------------------------------");
+				System.out.println("Details that must be filled by the doctors below");
+				System.out.print("Blood Type : ");
+				String bloodtype = med.next();
+				System.out.print("Condition of heart rate : ");
+				String condition = med.next();
+				System.out.print("X-ray details : ");
+				String xray = med.next();
+				System.out.print("Temperature : ");
+				double temp = med.nextDouble();
+				if (temp > 37) {
+					System.out.println("Insert the INTAKE medication needed by the patients below");
+					System.out.print("Packs of panadol : ");
+					double med1 = med.nextDouble();
+					double totalmed1 = med1*price[3];
+					System.out.print("Packs needed of antibiotics : ");
+					double med2 = med.nextDouble();
+					double totalmed2 = med2*price[4];
+			        System.out.println("\n");
+			        fever = totalmed1 + totalmed2;
+					}
+					else 
+					    fever = 0; 
+					
+				 System.out.println("--------------------------------------------------------------------------------------------------------------------------------------------");
+
+					System.out.println("\n");   
+			        System.out.print("Do you have UUMONETOUCH APPLICATION for the payment?");
+					System.out.print("Please enter 1 for yes and 2 for no : ");
+					app = med.nextInt();
+					
+					totalpayment = (price[1]+fever);
+				
+					if (app == 1) {
+						System.out.println("You will get a 50% off with UUMONETOUCH :) ");
+						System.out.println("Please enter your UUMONETOUCH balance : ");
+						double uumtouch = med.nextDouble();
+						double balance = uumtouch - (totalpayment/2);
+						System.out.printf("Your total for medical check-up for today : RM %.2f ",totalpayment/2);
+						System.out.println("\n");
+						System.out.printf("Balance of your payment : RM %.2f " ,balance);
+						System.out.println("\n");
+						
+					}
+					else if (app == 2) {
+						System.out.println("The payment will deducted on your card/cash ");
+						System.out.println("Enter how much money to pay : ");
+						double cash = med.nextDouble();
+						double balance = cash - totalpayment;
+						System.out.printf("Your total for medical check-up for today : RM %.2f ",totalpayment);
+						System.out.println("\n");
+						System.out.printf("Balance of your payment : RM %.2f " ,balance);
+						System.out.println("\n");
+					}
+					else
+					{
+						System.out.println("System unable to proceed with the payment. Please retry again");
+					}
+				}	
+		
+		
+		
+		else if (selection == 3 ) {
+					System.out.println("--------------------------------------------------------------------------------------------------------------------------------------------");
+					System.out.println("These are the charts of the body mass index you have");
+			        System.out.println("If your BMI is less than 18.5 : UNDERWEIGHT ");
+			        System.out.println("If your BMI is more than equal 18.5 and less than 24.9 : NORMAL ");
+			        System.out.println("If your BMI is less than 30  : OVERWEIGHT ");
+			        System.out.println("If your BMI is more than 30 : OBESE ");
+			        System.out.println("");
+					System.out.print("Enter weight in Kilogram: ");
+					double weight = med.nextDouble();
+					System.out.print("Enter your height in Meter: ");
+					double height = med.nextDouble();
+					double bmi = weight/(height*height);
+					System.out.printf("The BMI for this patient is : %.2f ",bmi);
+					System.out.print("\n");
+					
+			        
+			        System.out.println("--------------------------------------------------------------------------------------------------------------------------------------------");
+			        if (bmi > 30) {
+			        	System.out.println("                           This is the table for a day routine food intake        ");
+						System.out.println("==================================================================================================================");
+						System.out.println("= BREAKFAST ------> 3 egg whites + 1 toasted brown bread + 1/2 cup low fat milk (no sugar)                                                                                                   ");
+						System.out.println("= TUESDAY   ------> 1 cup papaya                                                                                               ");
+						System.out.println("= WEDNESDAY ------> 1 cup arhar dal + 1 chapatti + 1/2 cup low fat curd + salad                                                                                               ");
+						System.out.println("= THURSDAY  ------> 1 cup vegetable soup                                                                                               ");
+						System.out.println("= FRIDAY    ------> 1 cup pumpkin + 1 chapatti + salad                                                                                                ");
+						System.out.println("==================================================================================================================");
+						
+						System.out.println("As for starters, it is advisable to plan a four times a week exercising as a daily boost up");
+						
+						int sum=0;
+						int [] sales = new int[2];
+						
+						Scanner input = new Scanner(System.in);
+						
+						System.out.println("Enter the hours needed a day for the patients to participate in");
+						
+						for (int i=0; i<sales.length; i++)
+							for (int y=0; y<sales.length; y++) {
+								sales [i]=input.nextInt();
+								
+								sum = sum + sales[i];
+							}
+						int avg = sum/sales.length;
+						System.out.println("Keep it focus and maintain of the average hour as in "+avg+"hour");
+				
+					}
+							
+					else
+					{
+						int sum=0;
+						int [] sales = new int[2];
+						
+						Scanner input = new Scanner(System.in);
+						
+						System.out.println("Enter the kcall intake for a month in each line as in weeks (4 weeks) : ");
+						
+						for (int i=0; i<sales.length; i++)
+							for (int y=0; y<sales.length; y++) {
+								sales [i]=input.nextInt();
+								
+								sum = sum + sales[i];
+							}
+						int avg = sum/sales.length;
+						System.out.println("The sum of kcall "+sum);
+						System.out.println("The average of kcall is "+avg);
+						}
+			
+					System.out.println("--------------------------------------------------------------------------------------------------------------------------------------------");
+					System.out.println("Details that must be filled by the doctors below");
+					System.out.print("Blood Type : ");
+					String bloodtype = med.next();
+					System.out.print("Condition of heart rate : ");
+					String condition = med.next();
+					System.out.print("X-ray details : ");
+					String xray = med.next();
+					System.out.print("Temperature : ");
+					double temp = med.nextDouble();
+					if (temp > 37) {
+						System.out.println("Insert the INTAKE medication needed by the patients below");
+						System.out.print("Packs of panadol : ");
+						double med1 = med.nextDouble();
+						double totalmed1 = med1*price[3];
+						System.out.print("Packs needed of antibiotics : ");
+						double med2 = med.nextDouble();
+						double totalmed2 = med2*price[4];
+				        System.out.println("\n");
+				        fever = totalmed1 + totalmed2;
+						}
+						else 
+						   fever = 0; 
+			
+			System.out.println("--------------------------------------------------------------------------------------------------------------------------------------------");
+
+			System.out.println("\n");   
+	        System.out.print("Do you have UUMONETOUCH APPLICATION for the payment?");
+			System.out.print("Please enter 1 for yes and 2 for no : ");
+			app = med.nextInt();
+			
+			totalpayment = (price[2]+ fever);
+		
+			if (app == 1) {
+				System.out.println("You will get a 50% off with UUMONETOUCH : ");
+				System.out.println("Please enter your UUMONETOUCH balance : ");
+				double uumtouch = med.nextDouble();
+				double balance = uumtouch - (totalpayment/2);
+				System.out.printf("Your total for medical check-up for today : RM %.2f ",totalpayment/2);
+				System.out.println("\n");
+				System.out.printf("Balance of your payment : RM %.2f " ,balance);
+				System.out.println("\n");
+				
+			}
+			else if (app == 2) {
+				System.out.println("The payment will deducted on your card/cash ");
+				System.out.println("Enter how much money to pay : ");
+				double cash = med.nextDouble();
+				double balance = cash - totalpayment;
+				System.out.printf("Your total for medical check-up for today : RM %.2f ",totalpayment);
+				System.out.println("\n");
+				System.out.printf("Balance of your payment : RM %.2f " ,balance);
+				System.out.println("\n");
+			}
+			else
+			{
+				System.out.println("System unable to proceed with the payment. Please retry again");
+			}
+					}
+		
+		else
+		System.out.println("No services available");
+		
+
+		}
+}
+
+			
