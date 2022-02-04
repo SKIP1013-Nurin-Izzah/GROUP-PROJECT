@@ -1,0 +1,262 @@
+*****************************************************************
+_________________________________________________________________
+---------------[ WELCOME TO UUM EMPLOYEE SYSTEM ]----------------
+_________________________________________________________________
+
+
+This program is to help new employees to update their record in the system
+  and calculate their salaries which have been added and subtracted by
+ various sectors such as taxes, EPF, SOCSO and etc.
+
+MAIN MENU
+1. ADD PERSONAL INFORMATION
+2. VIEW PERSONAL INFORMATION
+3. CALCULATE SALARY
+4. CALCULATE SAVING
+5. EXIT
+Please choose one of the above options: 
+1
+_________________________________________________________________
+
+--------------------------[Section 1]----------------------------
+
+Please enter your name: 
+NURIN IZZAH ISHAK
+Please enter your ID: 
+288063
+Please enter your NRIC (without (-)): 
+020415140514
+Please enter your email: 
+nurinizzah154@gmail.com
+Please enter your phone number: 
+01136963284
+Please enter your job: 
+[Accountant / Bus Driver / Cleaner]:
+Bus Driver
+Record has been added successfully!
+----------------------------------------------------------------------
+Do you want to add personal information record? [Y/N]: 
+y
+Please enter your name: 
+NUR SYUHADA ABDUL RAZAK
+Please enter your ID: 
+288004
+Please enter your NRIC (without (-)): 
+020325020826
+Please enter your email: 
+syuhadarazak@gmail.com
+Please enter your phone number: 
+011456789
+Please enter your job: 
+[Accountant / Bus Driver / Cleaner]:
+Accountant
+Record has been added successfully!
+----------------------------------------------------------------------
+Do you want to add personal information record? [Y/N]: 
+y
+Please enter your name: 
+NUR AIN FATINAH BT KAMARUDIN
+Please enter your ID: 
+288668
+Please enter your NRIC (without (-)): 
+021201080434
+Please enter your email: 
+fatinahain@gmail.com
+Please enter your phone number: 
+01123456789
+Please enter your job: 
+[Accountant / Bus Driver / Cleaner]:
+Cleaner
+Record has been added successfully!
+----------------------------------------------------------------------
+Do you want to add personal information record? [Y/N]: 
+n
+_________________________________________________________________
+---------------[ WELCOME TO UUM EMPLOYEE SYSTEM ]----------------
+_________________________________________________________________
+
+
+This program is to help new employees to update their record in the system
+  and calculate their salaries which have been added and subtracted by
+ various sectors such as taxes, EPF, SOCSO and etc.
+
+MAIN MENU
+1. ADD PERSONAL INFORMATION
+2. VIEW PERSONAL INFORMATION
+3. CALCULATE SALARY
+4. CALCULATE SAVING
+5. EXIT
+Please choose one of the above options: 
+2
+-----------------------------------------------------------------
+                     PERSONAL INFORMATION						 
+-----------------------------------------------------------------
+NAME      			:	NURIN IZZAH ISHAK
+EMPLOYEE ID 			:	288063.0
+NRIC 				:	2.0415140514E10
+PHONE NUMBER 			:	1.136963284E9
+EMAIL 				:	nurinizzah154@gmail.com
+JOB 				:	Bus Driver
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
+                     PERSONAL INFORMATION						 
+-----------------------------------------------------------------
+NAME      			:	NUR SYUHADA ABDUL RAZAK
+EMPLOYEE ID 			:	288004.0
+NRIC 				:	2.0325020826E10
+PHONE NUMBER 			:	1.1456789E7
+EMAIL 				:	syuhadarazak@gmail.com
+JOB 				:	Accountant
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
+                     PERSONAL INFORMATION						 
+-----------------------------------------------------------------
+NAME      			:	NUR AIN FATINAH BT KAMARUDIN
+EMPLOYEE ID 			:	288668.0
+NRIC 				:	2.1201080434E10
+PHONE NUMBER 			:	1.123456789E9
+EMAIL 				:	fatinahain@gmail.com
+JOB 				:	Cleaner
+-----------------------------------------------------------------
+
+_________________________________________________________________
+---------------[ WELCOME TO UUM EMPLOYEE SYSTEM ]----------------
+_________________________________________________________________
+
+
+This program is to help new employees to update their record in the system
+  and calculate their salaries which have been added and subtracted by
+ various sectors such as taxes, EPF, SOCSO and etc.
+
+MAIN MENU
+1. ADD PERSONAL INFORMATION
+2. VIEW PERSONAL INFORMATION
+3. CALCULATE SALARY
+4. CALCULATE SAVING
+5. EXIT
+Please choose one of the above options: 
+3
+Please choose your job: 1. Accountant
+                        2. Bus Driver
+                        3. Cleaner
+(Please choose from 1-3): 
+2
+_________________________________________________________________
+
+-------------------------[ Bus Driver ]--------------------------
+
+Basic Salary: RM 1200.0
+The salary is not include with variable pay which is
+ petrol allowance and mobile allowance
+
+************************* Variable Pay **************************
+
+Your petrol allowance for this month is : 100.0
+Your mobile allowance for this month is: RM 50.0
+Variable pay: RM 150.0
+
+******************** Statutory Contribution *********************
+
+EPF Employee Contribution: RM 108.0
+Rate of contribution for Employees' Social Security
+ when wages exceed RM1200 but not RM1300: RM6.25
+Tax deduction: RM 120.0
+
+Your total statutory contribution: RM 234.25
+
+************************** Net Salary ***************************
+
+Your net salary for this month: RM 1115.75
+
+_________________________________________________________________
+
+Your job is not in the system.
+
+*****************************************************************
+_________________________________________________________________
+---------------[ WELCOME TO UUM EMPLOYEE SYSTEM ]----------------
+_________________________________________________________________
+
+
+This program is to help new employees to update their record in the system
+  and calculate their salaries which have been added and subtracted by
+ various sectors such as taxes, EPF, SOCSO and etc.
+
+MAIN MENU
+1. ADD PERSONAL INFORMATION
+2. VIEW PERSONAL INFORMATION
+3. CALCULATE SALARY
+4. CALCULATE SAVING
+5. EXIT
+Please choose one of the above options: 
+4
+_________________________________________________________________
+---------------------[ SAVING CALCULATION ]----------------------
+_________________________________________________________________
+
+Please enter your net salary for this month: RM 
+1115.75
+Please enter your house rent payment: RM 
+600
+Please enter your electricity bills: RM 
+64
+Please enter your water bills: RM 
+23
+Please enter your internet bills: RM 
+50
+Please enter your insurance payment: RM 
+50
+
+=================================================================
+Your saving for this month is: RM 328.75
+Your total saving is: RM 328.75
+=================================================================
+Do you want to add your total saving? [Y/N]: 
+y
+_________________________________________________________________
+---------------------[ SAVING CALCULATION ]----------------------
+_________________________________________________________________
+
+Please enter your net salary for this month: RM 
+1115.75
+Please enter your house rent payment: RM 
+600
+Please enter your electricity bills: RM 
+76
+Please enter your water bills: RM 
+12
+Please enter your internet bills: RM 
+50
+Please enter your insurance payment: RM 
+50
+
+=================================================================
+Your saving for this month is: RM 327.75
+Your total saving is: RM 656.50
+=================================================================
+Do you want to add your total saving? [Y/N]: 
+n
+_________________________________________________________________
+---------------[ WELCOME TO UUM EMPLOYEE SYSTEM ]----------------
+_________________________________________________________________
+
+
+This program is to help new employees to update their record in the system
+  and calculate their salaries which have been added and subtracted by
+ various sectors such as taxes, EPF, SOCSO and etc.
+
+MAIN MENU
+1. ADD PERSONAL INFORMATION
+2. VIEW PERSONAL INFORMATION
+3. CALCULATE SALARY
+4. CALCULATE SAVING
+5. EXIT
+Please choose one of the above options: 
+5
+=================================================================
+
+**************** You choose to exit. Thank you. *****************
+
+=================================================================
