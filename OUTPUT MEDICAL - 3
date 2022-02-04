@@ -1,0 +1,54 @@
+------------------------Welcome to the MEDICAL UUM------------------------
+-------------------------WE SHARE WE CARE WE LOVE-------------------------
+Patient 1
+Name : Jean Kirstein
+Age : 40
+Gender : MALE
+Personal e-mail : ackerman@yahoo.com
+Phone number : 01123343434
+Please take note on the hours charges and the selection of the services provided
+===============================================================
+SERVICES          | PER APPOINTMENT (RM)   |  SELECTION NEEDED |
+---------------------------------------------------------------
+= DIET SERVICES   |          70            |         1         |                                                             
+= CHECK UP        |           5            |         2         |                                                          
+= DIET + CHECK UP |          75            |         3         |                                                        
+= PANADOL         |          10            |         -         |                                                        
+= ANTIBIOTICS     |          8             |         -         |                                                        
+===============================================================
+Please select which treatment is needed = 
+3
+--------------------------------------------------------------------------------------------------------------------------------------------
+These are the charts of the body mass index you have
+If your BMI is less than 18.5 : UNDERWEIGHT 
+If your BMI is more than equal 18.5 and less than 24.9 : NORMAL 
+If your BMI is less than 30  : OVERWEIGHT 
+If your BMI is more than 30 : OBESE 
+
+Enter weight in Kilogram: 60
+Enter your height in Meter: 1.55
+The BMI for this patient is : 24.97 
+--------------------------------------------------------------------------------------------------------------------------------------------
+Enter the kcall intake for a month in each line as in weeks (4 weeks) : 
+12000
+15000
+13442
+12332
+The sum of kcall 52774
+The average of kcall is 26387
+--------------------------------------------------------------------------------------------------------------------------------------------
+Details that must be filled by the doctors below
+Blood Type : B
+Condition of heart rate : NORMAL
+X-ray details : NORMAL
+Temperature : 37
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Do you have UUMONETOUCH APPLICATION for the payment?Please enter 1 for yes and 2 for no : 1
+You will get a 50% off with UUMONETOUCH : 
+Please enter your UUMONETOUCH balance : 
+90
+Your total for medical check-up for today : RM 37.50 
+
+Balance of your payment : RM 52.50 
